@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <style>
+    body {
+      background-color: #ffffff;
+      /* matte dark background */
+      color: #000000;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .max-w-custom {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playfair', serif;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="py-4  bg-white sticky top-0 z-50  py-4 text-black">
+    <div class="max-w-custom flex justify-between items-center px-6" >
+      <h1 class="font-['Playfair'] text-2xl font-bold ">Portfolio</h1>
+      <nav class="space-x-6">
+        <i data-lucide="heart"></i><a href="#about" class="hover:text-gray-400">About</a>
+        <a href="#projects" class="hover:text-gray-400">Projects</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[#fafafb] max-w-custom px-6 py-20 flex-[1] flex-col md:flex-row items-center gap-12">
+    <div class="flex-1">
+      <h2 class="font-['Playfair'] text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-black-400">John
+          Doe</span></h2>
+      <p class="text-2xl text-black mb-12">I design and build digital experiences that are intuitive, elegant, and
+        impactful. With a focus on thoughtful interactions and clean aesthetics, I create work that resonates.</p>
+      <a href="#projects"
+        class="px-6 py-3 bg-white rounded-[10px] shadow transition text-black font-semibold border-2 border-black hover:border-5">View
+        My Work </a>
+      <span><a href="#projects"
+          class="px-6 py-3 bg-white rounded-[10px] shadow transition text-black font-semibold border-2 border-black">contact
+          Me</a>
+      </span>
+    </div>
+    <div class="flex-1">
+      <!--  <img src="https://via.placeholder.com/400x400" alt="Profile" class="rounded-2xl shadow-lg" /> -->
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-custom px-6 py-4 ">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-black-300 leading-relaxed">
+      I'm a dedicated learner, always exploring new technologies and improving my skills.
+      My main interests include modern frontend development, user experience, and web animations.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-[#fafafb] max-w-custom px-6 py-4">
+    <h3 class="text-3xl font-bold mb-10">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-8 ">
+      <div
+        class="bg-gradient-to-b from-[#9ca28e] to-[#2a360b] rounded-[5px] shadow-lg p-2 transform transition-transform duration-500 ease-out hover:scale-105 text-white">
+        <img
+          src="https://photos.sambecker.com/_next/image?url=https%3A%2F%2Fwpz47wrhgzc7qaub.public.blob.vercel-storage.com%2Fphoto-5ANupFfpncnSZvrb.jpg&w=640&q=75"
+          class="rounded-[5px] mb-4" alt="Project 1">
+        <h4 class="text-xl font-semibold">Project One</h4>
+        <p class="">A cool project description goes here.</p>
+       <div class="flex flex-wrap mb-4 gap-2 text-white">
+  <span class="bg-transparent text-sm font-medium px-1 py-1 rounded-full border-1 border-white">
+    JavaScript
+  </span>
+  <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+    Tailwind CSS
+  </span>
+  <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">
+    HTML
+  </span>
+  <span class="bg-pink-100 text-pink-800 text-sm font-medium px-3 py-1 rounded-full">
+    CSS
+  </span>
+  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">
+    React
+  </span>
+</div>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#c9dbeb] to-[#6f9ec9] rounded-[5px] shadow-lg p-2 transform transition-transform duration-500 ease-out hover:scale-105 text-white">
+        <img
+          src="https://photos.sambecker.com/_next/image?url=https%3A%2F%2Fwpz47wrhgzc7qaub.public.blob.vercel-storage.com%2Fphoto-ixU0cTsrWbsGa5tB.jpeg&w=640&q=75"
+          class="rounded-[5px] mb-4" alt="Project 2">
+        <h4 class="text-xl font-semibold">Project Two</h4>
+        <p class="">Another awesome project description here.</p>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#b99ea4] to-[#a14a43] rounded-[5px] shadow-lg p-2 transform transition-transform duration-500 ease-out hover:scale-105 text-white">
+        <img
+          src="https://photos.sambecker.com/_next/image?url=https%3A%2F%2Fwpz47wrhgzc7qaub.public.blob.vercel-storage.com%2Fphoto-aRxxwal82vecLIg6.jpg&w=640&q=75"
+          class="rounded-[5px] mb-4" alt="Project 3">
+        <h4 class="text-xl font-semibold">Project Three</h4>
+        <p class="">More details about this project go here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-custom  px-6 py-4">
+    <h3 class="text-3xl font-bold mb-6">Contact</h3>
+    <form class="space-y-4 max-w-lg">
+      <input type="text" placeholder="Your Name"
+        class="w-full px-4 py-2 rounded-[5px] bg-white text-black border-2 border-black" />
+      <input type="email" placeholder="Your Email"
+        class="w-full px-4 py-2 rounded-[5px] bg-white text-black border-2 border-black" />
+      <textarea placeholder="Your Message" rows="5"
+        class="w-full px-4 py-2 rounded-[5px] bg-white text-black border-2 border-black"></textarea>
+      <button type="submit"
+        class="px-6 py-3 bg-white rounded-[10px] shadow transition text-black font-bold border-2 border-black hover:border-blue-500">Send
+        Message</button>
+    </form>
+  </section>
+ <!-- image-ui.html -->
+<div
+  class="glass-ui fixed bottom-4 left-1/2 -translate-x-1/2 px-3 py-2 flex items-center rounded-full max-w-custom shadow-lg text-white"
+  style="background: rgba(0,0,0,0.5);; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); "
+>
+  <button class="text-white/70 hover:text-white p-2">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+
+  <input
+    type="text"
+    placeholder="Describe your image..."
+    class="bg-transparent flex-1 px-3 py-1 outline-none placeholder-white/60 text-white"
+  />
+
+  <div class="flex items-center gap-2 ml-3">
+    <button class="bg-white/6 hover:bg-white/10 px-3 py-1 rounded-lg flex items-center gap-2 text-sm">
+      <i class="fa-regular fa-image"></i>
+      <span>Image</span>
+    </button>
+    <button class="bg-white/6 hover:bg-white/10 px-3 py-1 rounded-lg text-sm">1:1</button>
+    <button class="bg-white/6 hover:bg-white/10 px-3 py-1 rounded-lg text-sm">2v</button>
+    <button class="bg-white/6 hover:bg-white/10 px-3 py-1 rounded-lg">
+      <i class="fa-solid fa-question"></i>
+    </button>
+  </div>
+
+  <button class="text-white/70 hover:text-white p-2 ml-3">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-[#fafafb] px-6 py-4 mt-20 flex align-left">
+    <div class="max-w-custom  text-gray-700 text-sm">
+      <i data-lucide="copyright"></i>
+      <p>hello</p>
+    </div>
+  </footer>
+
+  <script>
+    // Init Lucide Icons
+    lucide.createIcons();
+
+    // GSAP Animations
+    gsap.from("header", { y: -80, duration: 0.8, ease: "power3.out" });
+    gsap.from("section", { opacity: 0, y: 40, duration: 1, stagger: 0.3, ease: "power3.out" });
+  </script>
+</body>
+
+</html>
